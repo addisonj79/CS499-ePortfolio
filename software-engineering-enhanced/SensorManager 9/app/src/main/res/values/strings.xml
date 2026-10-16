@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Event Tracker</string>
+    <string name="login_title">Event Tracker Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Create New Account</string>
+    <string name="event_grid_title">Upcoming Events</string>
+    <string name="sms_alerts_button">SMS Alerts</string>
+    <string name="add_event_button">Add Event</string>
+    <string name="event_name_hint">Event Name</string>
+    <string name="event_date_hint">YYYY-MM-DD</string>
+    <string name="pick_date_button">Pick Date</string>
+    <string name="edit_button">Edit</string>
+    <string name="delete_button">Delete</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="update_event_title">Update Event</string>
+    <string name="add_new_event_title">Add New Event</string>
+    <string name="confirm_delete_title">Delete event?</string>
+    <string name="confirm_delete_message">Are you sure you want to delete \"%1$s\"? This cannot be undone.</string>
+    <string name="empty_events_message">No events yet. Tap \"Add Event\" to create your first one.</string>
+</resources>
