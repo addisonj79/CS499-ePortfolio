@@ -3,70 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Algorithms and Data Structures | CS 499</title>
+    <title>Algorithms and Data Structures | Addison's CS 499 ePortfolio</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
+            margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.7;
-            margin: 0;
-            padding: 0;
+            color: #333;
             background-color: #f4f6f9;
-            color: #263238;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin-bottom: 0;
+            color: #d1d5db;
+        }
+
+        nav {
+            background-color: #111827;
+            padding: 15px 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+            text-decoration: underline;
         }
 
         main {
             max-width: 1000px;
-            margin: 40px auto;
-            padding: 35px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            margin: 30px auto;
+            padding: 0 20px;
         }
 
-        h1 {
-            color: #17365d;
-            border-bottom: 3px solid #2f75b5;
-            padding-bottom: 12px;
-            margin-bottom: 30px;
+        section {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
         h2 {
-            color: #17365d;
-            margin-top: 30px;
-            margin-bottom: 12px;
+            color: #1d4ed8;
+            margin-top: 0;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 10px;
         }
 
-        p {
-            margin-bottom: 18px;
+        h3 {
+            color: #1f2937;
         }
 
-        .artifact {
-            padding: 18px;
-            margin-bottom: 15px;
-            background-color: #f4f7fb;
-            border-left: 4px solid #2f75b5;
-            border-radius: 5px;
-        }
-
-        .artifact a {
+        .artifact-link {
             display: inline-block;
-            color: #ffffff;
-            background-color: #17365d;
+            background-color: #1d4ed8;
+            color: white;
             padding: 10px 16px;
+            margin: 8px 8px 8px 0;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
         }
 
-        .artifact a:hover {
-            background-color: #2f75b5;
+        .artifact-link:hover {
+            background-color: #1e40af;
         }
 
-        @media (max-width: 700px) {
-            main {
-                margin: 15px;
+        ul {
+            padding-left: 25px;
+        }
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 650px) {
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            section {
                 padding: 20px;
             }
         }
@@ -74,87 +123,198 @@
 </head>
 
 <body>
-    <main>
+
+    <header>
         <h1>Algorithms and Data Structures</h1>
+        <p>CS 499 Computer Science Capstone ePortfolio</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="professional-self-assessment.html">Professional Self-Assessment</a>
+        <a href="software-engineering.html">Software Engineering</a>
+        <a href="algorithm-data-structures.html">Algorithms &amp; Data Structures</a>
+        <a href="databases.html">Databases</a>
+    </nav>
+
+    <main>
 
         <section>
-            <h2>Pre-Enhanced Artifact</h2>
-            <div class="artifact">
-                <p>
-                    This is the original Course Planner program created
-                    for CS 300 before the enhancements.
-                </p>
-                <a
-                    href="https://github.com/addisonj79/CS499-ePortfolio/blob/main/Project%20Two%20(1)%20(1).cpp"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    View Original Course Planner
-                </a>
-            </div>
+            <h2>Overview</h2>
+
+            <p>
+                This section of my ePortfolio demonstrates my knowledge
+                of algorithms and data structures through my CS 300
+                Course Planner project. The program was developed in
+                C++ and focuses on organizing course information and
+                allowing users to retrieve course details.
+            </p>
+
+            <p>
+                For my capstone enhancement, I revisited the original
+                program and focused on improving how course information
+                is organized and displayed. This artifact demonstrates
+                my ability to apply data structures and algorithms to
+                practical programming problems.
+            </p>
         </section>
 
         <section>
-            <h2>Enhanced Artifact</h2>
-            <div class="artifact">
-                <p>
-                    This version improves the original program by using
-                    a Binary Search Tree to store and search for courses.
-                </p>
-                <a
-                    href="https://github.com/addisonj79/CS499-ePortfolio/blob/main/Project2_enhancement.cpp"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    View Enhanced Course Planner
-                </a>
-            </div>
+            <h2>Original Artifact</h2>
+
+            <p>
+                The original Course Planner program was created to
+                load course information, organize the data, and allow
+                users to look up courses and their prerequisites.
+                Developing this program helped me understand how
+                different data structures affect the way information
+                is stored, searched, and displayed.
+            </p>
+
+            <a class="artifact-link"
+               href="Project%20Two%20(1)%20(1).cpp"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Original C++ Source
+            </a>
         </section>
 
         <section>
-            <h2>Enhancement Narrative</h2>
+            <h2>Code Review</h2>
 
             <p>
-                The artifact I chose is my Course Planner program that I
-                originally made for my CS 300 class. I created it in C++,
-                and the program lets the user load course information from
-                a file, view a list of courses, and look up a specific
-                course and its prerequisites.
+                My code review examined the original program's
+                structure, data organization, searching functionality,
+                and opportunities for improvement. I considered how
+                the choice of data structure affects the organization
+                and retrieval of course information.
             </p>
 
             <p>
-                I chose this project because I think it shows some of the
-                skills I learned with algorithms and data structures. In
-                the original project, I used a vector to store the courses
-                and a linear search to find a course. For my enhancement,
-                I added a Binary Search Tree to store the courses and
-                added functions to insert and search for courses in the
-                tree. I also added an in-order traversal so the courses
-                can be printed in order.
+                This review helped me identify ways to improve the
+                program's implementation while preserving its core
+                functionality and making the code easier to understand
+                and maintain.
             </p>
 
             <p>
-                I believe I met the course outcomes I planned to work on
-                because I improved the original program and applied a
-                different data structure and algorithms. I do not have
-                any major changes to my outcome plans.
-            </p>
-
-            <p>
-                While working on the enhancement, I learned more about
-                how Binary Search Trees work and how recursion is used
-                when inserting and searching for information. One of the
-                harder parts was adding the tree without breaking parts
-                of the program that were already working. I also had to
-                make sure the courses were being placed in the correct
-                positions in the tree and that the search would find
-                the correct course.
-            </p>
-
-            <p>
-                Overall, this project helped me better understand
-                pointers, recursion, and data structures.
+                My code review video is included in my ePortfolio
+                for reviewing the original code and discussing
+                opportunities for enhancement.
             </p>
         </section>
+
+        <section>
+            <h2>Algorithms and Data Structures Enhancement</h2>
+
+            <p>
+                My enhancement builds on the original Course Planner
+                program. The enhanced source file is provided below
+                so viewers can examine the implementation and see
+                how the program was developed further.
+            </p>
+
+            <h3>Enhancement Details</h3>
+
+            <ul>
+                <li>
+                    Use a Binary Search Tree to store and organize
+                    course information.
+                </li>
+                <li>
+                    Use tree-based searching to locate course records.
+                </li>
+                <li>
+                    Apply in-order traversal to display course
+                    information in sorted order.
+                </li>
+                <li>
+                    Improve code organization and readability while
+                    preserving the program's purpose.
+                </li>
+            </ul>
+
+            <a class="artifact-link"
+               href="Project2_enhancement.cpp"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Enhanced C++ Source
+            </a>
+        </section>
+
+        <section>
+            <h2>Skills and Course Outcomes</h2>
+
+            <p>
+                This artifact demonstrates my ability to apply
+                computer science concepts to software development
+                and improve an existing program through data
+                structures and algorithms.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Data Structures:</strong>
+                    Applying a Binary Search Tree to organize
+                    course information.
+                </li>
+                <li>
+                    <strong>Algorithms:</strong>
+                    Using tree-based searching and in-order traversal
+                    to retrieve and display data.
+                </li>
+                <li>
+                    <strong>Problem Solving:</strong>
+                    Evaluating ways to organize and access information.
+                </li>
+                <li>
+                    <strong>Programming:</strong>
+                    Applying C++ concepts to implement program
+                    functionality.
+                </li>
+                <li>
+                    <strong>Code Quality:</strong>
+                    Considering readability, organization, and
+                    maintainability.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Reflection</h2>
+
+            <p>
+                Working on the Course Planner project helped me
+                develop a stronger understanding of how data
+                structures and algorithms affect software design.
+                Choosing an appropriate data structure can influence
+                how effectively a program organizes, searches,
+                and displays information.
+            </p>
+
+            <p>
+                Enhancing this artifact allowed me to revisit an
+                existing program and apply concepts related to
+                binary search trees and traversal algorithms.
+                It also reinforced the importance of maintaining
+                existing functionality while improving a program's
+                structure and implementation.
+            </p>
+
+            <p>
+                These skills will help me approach future programming
+                challenges by evaluating the problem, choosing
+                appropriate data structures, and implementing
+                solutions that are understandable and maintainable.
+            </p>
+        </section>
+
     </main>
+
+    <footer>
+        <p>&copy; 2026 Addison's CS 499 ePortfolio</p>
+    </footer>
+
 </body>
 </html>
-```
