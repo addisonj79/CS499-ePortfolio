@@ -7,56 +7,80 @@
     <title>Addison's CS 499 ePortfolio</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
+            margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.7;
-            margin: 0;
-            padding: 0;
+            color: #333;
             background-color: #f4f6f9;
-            color: #263238;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin-bottom: 0;
+            color: #d1d5db;
         }
 
         nav {
-            background-color: #17365d;
-            padding: 18px 25px;
+            background-color: #111827;
+            padding: 15px 10px;
             text-align: center;
         }
 
         nav a {
-            color: #ffffff;
+            color: white;
             text-decoration: none;
-            margin: 0 8px;
+            margin: 0 10px;
             font-weight: bold;
-            display: inline-block;
-            padding: 5px 0;
         }
 
         nav a:hover {
-            color: #a9d6ff;
+            color: #93c5fd;
             text-decoration: underline;
         }
 
         main {
             max-width: 1000px;
-            margin: 40px auto;
-            padding: 35px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
         h1 {
-            color: #17365d;
-            font-size: 2.4rem;
-            border-bottom: 3px solid #2f75b5;
-            padding-bottom: 15px;
-            margin-top: 0;
+            color: white;
         }
 
         h2 {
-            color: #17365d;
-            margin-top: 30px;
-            margin-bottom: 12px;
+            color: #1d4ed8;
+            margin-top: 0;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #1f2937;
         }
 
         p {
@@ -64,10 +88,7 @@
         }
 
         .welcome {
-            background-color: #f0f5fb;
-            border-left: 5px solid #2f75b5;
-            padding: 20px;
-            border-radius: 5px;
+            border-left: 5px solid #1d4ed8;
         }
 
         .portfolio-sections {
@@ -78,44 +99,59 @@
         }
 
         .portfolio-card {
-            background-color: #f4f7fb;
+            background-color: #f9fafb;
             padding: 20px;
             border-radius: 8px;
-            border-top: 4px solid #2f75b5;
+            border-top: 4px solid #1d4ed8;
         }
 
         .portfolio-card h3 {
-            color: #17365d;
             margin-top: 0;
         }
 
+        .artifact-link {
+            display: inline-block;
+            background-color: #1d4ed8;
+            color: white;
+            padding: 10px 16px;
+            margin: 8px 8px 8px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .artifact-link:hover {
+            background-color: #1e40af;
+        }
+
         footer {
+            background-color: #1f2937;
+            color: white;
             text-align: center;
             padding: 20px;
-            color: #526171;
-            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
         }
 
         @media (max-width: 750px) {
-            main {
-                margin: 18px;
-                padding: 22px;
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
             }
 
             .portfolio-sections {
                 grid-template-columns: 1fr;
             }
 
-            nav {
-                padding: 12px;
-            }
-
-            nav a {
-                margin: 5px 8px;
-            }
-
-            h1 {
-                font-size: 1.9rem;
+            section {
+                padding: 20px;
             }
         }
     </style>
@@ -123,21 +159,21 @@
 
 <body>
 
+    <header>
+        <h1>CS 499 ePortfolio</h1>
+        <p>Computer Science Capstone | Southern New Hampshire University</p>
+    </header>
+
     <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
-        <a href="professional-self-assessment.html">
-            Professional Self-Assessment
-        </a>
+        <a href="professional-self-assessment.html">Professional Self-Assessment</a>
         <a href="software-engineering.html">Software Engineering</a>
-        <a href="algorithm-data-structures.html">
-            Algorithms &amp; Data Structures
-        </a>
+        <a href="algorithm-data-structures.html">Algorithms &amp; Data Structures</a>
         <a href="databases.html">Databases</a>
     </nav>
 
     <main>
-        <h1>CS 499 ePortfolio</h1>
 
         <section class="welcome">
             <h2>Welcome</h2>
@@ -154,9 +190,9 @@
             <h2>About Me</h2>
 
             <p>
-                My name is Addison, and I am a Computer Science student at
-                Southern New Hampshire University. I began the Computer
-                Science program in January 2024.
+                My name is Addison, and I am a Computer Science student
+                at Southern New Hampshire University. I began the
+                Computer Science program in January 2024.
             </p>
 
             <p>
@@ -164,6 +200,10 @@
                 programming, security, data structures, software
                 development, testing, and problem solving.
             </p>
+
+            <a class="artifact-link" href="about.html">
+                Learn More About Me
+            </a>
         </section>
 
         <section>
@@ -180,63 +220,87 @@
 
                 <div class="portfolio-card">
                     <h3>Software Engineering</h3>
+
                     <p>
                         Explore my work in software design, development,
                         testing, and code organization.
                     </p>
-                    <a href="software-engineering.html">
+
+                    <a class="artifact-link"
+                       href="software-engineering.html">
                         View Artifact
                     </a>
                 </div>
 
                 <div class="portfolio-card">
                     <h3>Algorithms &amp; Data Structures</h3>
+
                     <p>
                         Explore my work with algorithms, data structures,
                         searching, and problem solving.
                     </p>
-                    <a href="algorithm-data-structures.html">
+
+                    <a class="artifact-link"
+                       href="algorithm-data-structures.html">
                         View Artifact
                     </a>
                 </div>
 
                 <div class="portfolio-card">
                     <h3>Databases</h3>
+
                     <p>
                         Explore my work with data storage, organization,
                         and database functionality.
                     </p>
-                    <a href="databases.html">
+
+                    <a class="artifact-link"
+                       href="databases.html">
                         View Artifact
                     </a>
                 </div>
 
             </div>
         </section>
-        
-<section>
-    <h2>Code Review</h2>
-    <p>
-        Watch my code review video to see an overview of my
-        original project, its structure, and the enhancements
-        I planned for my Computer Science capstone.
-    </p>
 
-    <a href="https://youtu.be/wWVDxDQjcpg"
-       target="_blank"
-       rel="noopener noreferrer">
-        Watch My Code Review Video
-    </a>
-</section>
+        <section>
+            <h2>Professional Self-Assessment</h2>
 
+            <p>
+                Learn more about my professional growth, technical
+                skills, course outcomes, and career goals.
+            </p>
+
+            <a class="artifact-link"
+               href="professional-self-assessment.html">
+                View Self-Assessment
+            </a>
+        </section>
+
+        <section>
+            <h2>Code Review</h2>
+
+            <p>
+                Watch my code review video for an overview of my
+                original project, its structure, and the enhancements
+                discussed as part of my Computer Science capstone.
+            </p>
+
+            <a class="artifact-link"
+               href="https://youtu.be/wWVDxDQjcpg"
+               target="_blank"
+               rel="noopener noreferrer">
+                Watch My Code Review Video
+            </a>
+        </section>
 
     </main>
 
     <footer>
-        <p>CS 499 Computer Science ePortfolio</p>
+        <p>&copy; 2026 Addison's CS 499 ePortfolio</p>
         <p>Southern New Hampshire University</p>
     </footer>
 
 </body>
 </html>
-```
+
