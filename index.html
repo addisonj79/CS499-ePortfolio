@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Professional Self-Assessment | Addison's CS 499 ePortfolio</title>
 
     <style>
@@ -11,45 +12,46 @@
         }
 
         body {
-            margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.7;
+            margin: 0;
+            background-color: #f4f4f4;
             color: #333;
-            background-color: #f4f6f9;
         }
 
         header {
-            background-color: #1f2937;
+            background-color: #292929;
             color: white;
+            padding: 25px 20px;
             text-align: center;
-            padding: 35px 20px;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 2.2rem;
+            margin: 0 0 8px;
+            font-size: 2rem;
         }
 
         header p {
-            margin-bottom: 0;
-            color: #d1d5db;
+            margin: 0;
+            color: #dddddd;
         }
 
         nav {
-            background-color: #111827;
-            padding: 15px 10px;
+            background-color: #3b3b3b;
+            padding: 12px 15px;
             text-align: center;
         }
 
         nav a {
+            display: inline-block;
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 5px 10px;
             font-weight: bold;
         }
 
         nav a:hover {
-            color: #93c5fd;
+            color: #bdbdbd;
             text-decoration: underline;
         }
 
@@ -61,48 +63,92 @@
 
         section {
             background-color: white;
+            padding: 25px 30px;
             margin-bottom: 25px;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
         }
 
         h2 {
-            color: #1d4ed8;
+            color: #292929;
+            border-bottom: 2px solid #dddddd;
+            padding-bottom: 8px;
             margin-top: 0;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 10px;
         }
 
         h3 {
-            color: #1f2937;
+            color: #3b3b3b;
             margin-top: 25px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
         }
 
         ul {
             padding-left: 25px;
         }
 
-        footer {
-            background-color: #1f2937;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+        li {
+            margin-bottom: 8px;
         }
 
-        @media (max-width: 650px) {
-            nav a {
-                display: inline-block;
-                margin: 6px;
+        .outcome {
+            margin-top: 25px;
+            padding: 18px 20px;
+            background-color: #f8f8f8;
+            border-left: 4px solid #555555;
+            border-radius: 4px;
+        }
+
+        .outcome h3 {
+            margin-top: 0;
+        }
+
+        .outcome-statement {
+            font-weight: bold;
+            color: #292929;
+        }
+
+        .artifact-link {
+            color: #245a91;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .artifact-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #292929;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 35px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.6rem;
             }
 
-            header h1 {
-                font-size: 1.8rem;
+            nav a {
+                display: block;
+                margin: 8px 0;
             }
 
             section {
                 padding: 20px;
+            }
+
+            main {
+                padding: 0 12px;
             }
         }
     </style>
@@ -112,240 +158,511 @@
 
     <header>
         <h1>Professional Self-Assessment</h1>
-        <p>CS 499 Computer Science Capstone ePortfolio</p>
         <p>Addison Janovich | Southern New Hampshire University</p>
+        <p>Bachelor of Science in Computer Science</p>
     </header>
 
     <nav aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Professional Self-Assessment</a>
+        <a href="index.html">Professional Self-Assessment</a>
         <a href="home.html">Home</a>
         <a href="about.html">About Me</a>
-        <a href="software-engineering.html">Software Engineering</a>
-        <a href="algorithm-data-structures.html">Algorithms &amp; Data Structures</a>
+        <a href="software-engineering.html">Software Engineering and Design</a>
+        <a href="algorithm-data-structures.html">Algorithms and Data Structures</a>
         <a href="databases.html">Databases</a>
     </nav>
 
     <main>
 
-        <section>
+        <section id="introduction">
             <h2>Introduction</h2>
 
             <p>
-                Throughout my Computer Science program at Southern New
-                Hampshire University, I have learned a lot about programming,
-                software development, databases, algorithms, and security.
-                When I started the program, I focused mainly on writing code
-                and getting programs to work correctly. As I progressed
-                through my classes, I realized software development involves
-                much more than that. Code also needs to be organized, tested,
-                secure, and easy for other people to understand and maintain.
-                Completing my CS 499 capstone has given me a chance to reflect
-                on what I have learned and show how I can apply those skills
-                to real programming projects.
+                Throughout my Computer Science program at Southern New Hampshire
+                University, I have developed skills in programming, software
+                development, databases, algorithms, testing, security, and
+                problem-solving. When I started the program, I focused mainly
+                on writing code and getting programs to work correctly. As I
+                progressed through my courses, I learned that successful software
+                development involves much more than making a program run.
+                Software also needs to be organized, maintainable, secure,
+                reliable, and designed around the needs of its users.
             </p>
 
             <p>
-                One of the biggest skills I have developed is solving
-                problems. Throughout my classes, I have worked through
-                programming challenges, debugged errors, and learned to break
-                problems into smaller steps. I have also learned the
-                importance of communication and teamwork. Software developers
-                need to understand requirements, explain their decisions, and
-                consider the needs of the people who will use their
-                applications. Even when working independently, it is
-                important to write code that another developer can understand
-                and maintain.
+                My coursework has helped me become more comfortable analyzing
+                problems, breaking them into smaller tasks, debugging errors,
+                and choosing appropriate solutions. I have also learned the
+                importance of documenting my work and explaining technical
+                decisions so that other people can understand them. These skills
+                are important because software developers often work with other
+                developers, users, and stakeholders who have different levels
+                of technical knowledge.
             </p>
 
             <p>
-                My coursework has also strengthened my understanding of data
-                structures and algorithms. In my CS 300 Course Planner
-                project, I worked with C++ and a binary search tree to
-                organize and retrieve course information. This helped me
-                understand how the right data structure affects how
-                information is stored and accessed. I also learned about
-                software engineering and databases through projects that
-                involved managing information and improving application
-                functionality. In CS 305, I studied secure communications
-                and learned more about protecting information and why
-                security needs to be considered in software development.
-                These experiences have helped me build a foundation I can
-                continue to develop throughout my career.
+                My CS 499 ePortfolio brings together work from my Computer
+                Science program and demonstrates how I have developed as a
+                programmer and problem-solver. The artifacts in my portfolio
+                include my CS 300 Course Planner and my CS 360 mobile
+                event-tracking application. Reviewing these projects has given
+                me an opportunity to reflect on the skills I have developed,
+                identify areas for improvement, and consider how I can apply
+                what I have learned to future software development work.
             </p>
         </section>
 
-        <section>
-            <h2>My Capstone and Portfolio</h2>
+        <section id="software-engineering">
+            <h2>Software Engineering and Design</h2>
 
             <p>
-                My CS 499 ePortfolio brings together projects that
-                demonstrate different areas of my computer science
-                knowledge. My CS 360 mobile event-tracking application
-                focuses on application development and managing event
-                information. Through my enhancement work, I looked at ways
-                to improve the application's navigation, input validation,
-                event-management features, and overall organization. This
-                project helped me think more about the user experience and
-                how improvements can make software easier to use and
-                maintain.
+                Software engineering and design have taught me to consider how
+                a program is organized and how users interact with it, rather
+                than focusing only on whether the code works. Good design
+                includes readable code, clear navigation, appropriate input
+                validation, and a structure that makes future changes easier.
+                These practices help make software easier to maintain and
+                reduce the likelihood of errors.
             </p>
 
             <p>
-                My CS 300 Course Planner shows my understanding of data
-                structures and algorithms. Working with a binary search
-                tree helped me apply programming concepts to a practical
-                problem and understand how to organize and retrieve
-                information. My database-related work also demonstrates
-                the importance of storing and managing information
-                correctly. Although these projects focus on different
-                areas, both show how computer science concepts can be
-                applied to develop useful software.
+                My CS 360 mobile event-tracking application is an example of
+                how software engineering concepts can be applied to a practical
+                project. The application involves managing event information
+                and providing users with a way to work with that information.
+                Reviewing this project helped me recognize the importance of
+                organizing the application, making its features understandable,
+                and considering the experience of the person using it.
             </p>
 
             <p>
-                My security coursework adds another part to my overall
-                experience by showing the importance of protecting
-                information and using secure development practices.
-                Together, these projects demonstrate that I have gained
-                experience in several areas of computer science rather than
-                focusing on only one type of programming task. Developing
-                my ePortfolio has also helped me recognize my progress and
-                given me a way to present my skills to potential employers.
+                In my portfolio, I focus on the design and implementation
+                decisions that support the application's purpose. I also
+                recognize the value of input validation, a consistent
+                interface, and clear separation of responsibilities when
+                developing software. These are areas I can continue to improve
+                as I work toward writing more maintainable and professional
+                code.
             </p>
         </section>
 
-        <section>
-            <h2>Computer Science Program Learning Outcomes</h2>
+        <section id="algorithms">
+            <h2>Algorithms and Data Structures</h2>
 
             <p>
-                Throughout my Computer Science program, I have developed
-                skills that connect to the program learning outcomes.
-                My coursework and capstone have helped me understand how
-                communication, problem solving, programming, and the use
-                of computing tools work together when developing software.
+                My coursework in algorithms and data structures helped me
+                understand that the way information is organized can affect
+                how efficiently a program operates. Choosing a suitable data
+                structure depends on the problem being solved, the operations
+                a program needs to perform, and the trade-offs involved in
+                different approaches.
             </p>
 
-            <h3>Outcome 1: Collaboration</h3>
-
             <p>
-                Throughout my Computer Science program, I have learned the
-                importance of considering different perspectives and
-                understanding user needs when developing software. While
-                working on my CS 360 mobile event-tracking application, I
-                considered how users would interact with the application
-                and how improvements to navigation and input validation
-                could make it easier to use. I have also learned that
-                organizing code and documenting changes makes it easier
-                for other developers to understand and maintain a project.
-                These experiences have helped me understand how
-                communication, organization, and considering user needs
-                contribute to successful software development.
+                My CS 300 Course Planner is an example of these concepts in
+                practice. The project was developed in C++ and used a binary
+                search tree to organize course information. It also used
+                in-order traversal to display course information in sorted
+                order. Working with this project helped me understand how a
+                data structure can support a program's requirements and how
+                traversal methods affect the way information is retrieved
+                and presented.
             </p>
 
-            <h3>Outcome 2: Professional Communication</h3>
-
             <p>
-                Throughout my Computer Science program, I have improved
-                my ability to explain technical concepts and communicate
-                my work clearly. Creating my CS 499 ePortfolio has given
-                me an opportunity to describe my projects, explain the
-                enhancements I made, and discuss the reasoning behind my
-                technical decisions. For example, explaining my CS 300
-                Course Planner requires me to describe how a binary search
-                tree organizes and retrieves course information in a way
-                that others can understand. Developing my portfolio has
-                also helped me practice presenting technical information
-                in a professional manner. These skills will help me
-                communicate effectively with other developers,
-                stakeholders, and users in my future career.
-            </p>
-
-            <h3>Outcome 3: Computing Solutions and Algorithms</h3>
-
-            <p>
-                My CS 300 Course Planner demonstrates how I can apply
-                data structures and algorithmic principles to a
-                programming problem. Using a binary search tree helped
-                me understand how course information can be organized
-                and retrieved. My CS 360 mobile event-tracking
-                application also required me to consider how software
-                could be improved to better meet user needs. These
-                projects helped me understand the importance of choosing
-                appropriate solutions and considering efficiency,
-                reliability, and maintainability.
-            </p>
-
-            <h3>Outcome 4: Computing Tools and Techniques</h3>
-
-            <p>
-                Throughout my degree, I have gained experience with
-                programming languages, development tools, databases,
-                testing, and debugging. My work with C++ and the Course
-                Planner allowed me to apply programming concepts to a
-                practical problem, while my mobile application work
-                helped me better understand application functionality
-                and data management. My CS 305 security coursework also
-                taught me why it is important to use appropriate
-                techniques to protect information. These experiences
-                have prepared me to continue learning new technologies
-                and applying them to future projects.
+                This experience improved my ability to think through a problem
+                before choosing an implementation. Instead of selecting an
+                approach simply because it works, I learned to consider
+                whether it is appropriate for the information being managed
+                and the expected behavior of the program. These skills are
+                useful when developing applications that need to process,
+                organize, and retrieve information effectively.
             </p>
         </section>
 
-        <section>
+        <section id="databases">
+            <h2>Databases and Information Management</h2>
+
+            <p>
+                Database coursework helped me understand the importance of
+                storing, organizing, and retrieving information accurately.
+                Applications often depend on reliable data, so developers
+                need to consider how information is structured, how it is
+                accessed, and how changes are handled. Poor data management
+                can lead to incorrect results, duplicated information, and
+                problems for users.
+            </p>
+
+            <p>
+                My work with the CS 360 mobile event-tracking application
+                gave me an opportunity to consider how application data
+                supports the features a user expects. Event information must
+                be managed in a way that allows the application to provide
+                useful and consistent results. This helped me recognize
+                the relationship between an application's interface,
+                its underlying logic, and the data it uses.
+            </p>
+
+            <p>
+                Through my studies, I have also learned that data management
+                involves more than storing information. Developers must
+                consider data accuracy, organization, access, and protection.
+                These considerations are important when building applications
+                that people rely on to manage information.
+            </p>
+        </section>
+
+        <section id="technical-growth">
+            <h2>Technical Skills and Professional Growth</h2>
+
+            <p>
+                My Computer Science program has helped me build experience
+                with programming languages, software development tools,
+                debugging, testing, and problem-solving. Working on different
+                projects has shown me that each problem can require a
+                different approach. Sometimes the solution involves improving
+                an algorithm, while other times it involves reorganizing code,
+                validating input, or reconsidering how a feature should work.
+            </p>
+
+            <p>
+                I have also learned the importance of being able to explain
+                technical work clearly. Code needs to be understandable to
+                the people who maintain it, and project decisions need to
+                make sense to the people affected by them. Documentation,
+                communication, and collaboration are therefore important
+                parts of professional software development.
+            </p>
+
+            <p>
+                My security coursework, including CS 305, introduced me to
+                the importance of secure communications and protecting
+                information. It helped me understand that security should
+                be considered throughout development rather than treated
+                as an afterthought. I want to continue strengthening these
+                skills as I gain more experience and work on more complex
+                projects.
+            </p>
+        </section>
+
+        <section id="course-outcomes">
+            <h2>Computer Science Program Course Outcomes</h2>
+
+            <p>
+                The five course outcomes below represent important skills
+                developed throughout my Computer Science program. My
+                coursework and ePortfolio artifacts provide examples of how
+                I have practiced these skills and how I plan to apply them
+                in professional software development. Together, the outcomes
+                cover collaboration, communication, algorithmic problem-solving,
+                software development, and security.
+            </p>
+
+            <div class="outcome">
+                <h3>Outcome 1: Collaboration and Decision-Making</h3>
+
+                <p class="outcome-statement">
+                    Employ strategies for building collaborative environments
+                    that enable diverse audiences to support organizational
+                    decision-making in the field of computer science.
+                </p>
+
+                <p>
+                    This outcome emphasizes the importance of working with
+                    others, considering different perspectives, and sharing
+                    technical information in a way that supports informed
+                    decisions. Software development often involves people
+                    with different responsibilities and levels of technical
+                    knowledge. Developers need to listen to feedback, explain
+                    their reasoning, and consider how their decisions affect
+                    users and the larger project.
+                </p>
+
+                <p>
+                    My coursework has helped me recognize that solving a
+                    programming problem is not always an individual task.
+                    Developers may need to discuss requirements, explain
+                    possible approaches, and evaluate trade-offs before
+                    choosing a solution. My CS 300 Course Planner and CS 360
+                    mobile event-tracking application also demonstrate the
+                    importance of considering the purpose of a program and
+                    the people who will use or maintain it.
+                </p>
+
+                <p>
+                    As I continue developing my professional skills, I want
+                    to build on this foundation by communicating openly,
+                    considering feedback, and making technical decisions
+                    based on project requirements and user needs. These
+                    practices can help me contribute to a collaborative
+                    development environment and support better decisions
+                    within a team.
+                </p>
+            </div>
+
+            <div class="outcome">
+                <h3>Outcome 2: Professional Communication</h3>
+
+                <p class="outcome-statement">
+                    Design, develop, and deliver professional-quality oral,
+                    written, and visual communications that are coherent,
+                    technically sound, and appropriately adapted to specific
+                    audiences and contexts.
+                </p>
+
+                <p>
+                    This outcome focuses on communicating technical information
+                    clearly and professionally. Computer scientists need to
+                    explain their work through written documentation,
+                    presentations, diagrams, code comments, and discussions.
+                    The information should be accurate and organized while
+                    matching the knowledge and needs of the intended audience.
+                </p>
+
+                <p>
+                    Developing this ePortfolio has given me an opportunity
+                    to organize my work and explain the purpose of my
+                    projects, the concepts they demonstrate, and the skills
+                    I have gained. For example, I can describe how my CS 300
+                    Course Planner uses a binary search tree and in-order
+                    traversal without relying only on the source code to
+                    communicate its purpose. I can also explain the role of
+                    the CS 360 application and the importance of its
+                    organization and data management.
+                </p>
+
+                <p>
+                    I have learned that technical communication should help
+                    another person understand not only what a program does,
+                    but also how it works and why certain decisions were
+                    made. Going forward, I will apply these skills when
+                    documenting code, explaining solutions, communicating
+                    with teammates, and presenting my work to technical
+                    and nontechnical audiences.
+                </p>
+            </div>
+
+            <div class="outcome">
+                <h3>Outcome 3: Algorithms, Data Structures, and Problem-Solving</h3>
+
+                <p class="outcome-statement">
+                    Design and evaluate computing solutions that solve a given
+                    problem using algorithmic principles and computer science
+                    practices and standards appropriate to its solution while
+                    managing the trade-offs involved in design choices.
+                </p>
+
+                <p>
+                    This outcome emphasizes selecting appropriate algorithms
+                    and data structures, evaluating possible solutions, and
+                    understanding the trade-offs involved in implementation
+                    decisions. A solution should meet the requirements of
+                    the problem while taking into account factors such as
+                    efficiency, organization, readability, and maintainability.
+                </p>
+
+                <p>
+                    My CS 300 Course Planner demonstrates this outcome
+                    through its use of C++ and a binary search tree to
+                    organize course information. The project uses in-order
+                    traversal to present information in sorted order.
+                    Completing this work helped me understand how a
+                    data structure supports specific program requirements
+                    and how the choice of structure influences the way
+                    information is processed.
+                </p>
+
+                <p>
+                    This experience also taught me to consider why one
+                    approach may be more appropriate than another. Different
+                    solutions can produce the same result but vary in
+                    complexity, efficiency, and ease of maintenance.
+                    I can apply this understanding to future programming
+                    tasks by analyzing requirements, comparing possible
+                    approaches, testing my solutions, and selecting
+                    implementations that are appropriate for the problem.
+                </p>
+            </div>
+
+            <div class="outcome">
+                <h3>Outcome 4: Software Development and Computing Practices</h3>
+
+                <p class="outcome-statement">
+                    Demonstrate an ability to use well-founded and innovative
+                    techniques, skills, and tools in computing practices for
+                    the purpose of implementing computer solutions that
+                    deliver value and accomplish industry-specific goals.
+                </p>
+
+                <p>
+                    This outcome focuses on applying programming knowledge,
+                    development tools, and professional practices to create
+                    solutions that serve a clear purpose. Building useful
+                    software requires more than writing code. Developers
+                    must understand requirements, organize their work,
+                    test functionality, and consider how the completed
+                    application will meet the needs of its users.
+                </p>
+
+                <p>
+                    My CS 360 mobile event-tracking application is an
+                    example of applying software development concepts to
+                    a practical user need. The application manages event
+                    information, connecting its features to the information
+                    users need to work with. Reviewing this project has
+                    helped me recognize the importance of application
+                    organization, usability, input validation, and
+                    maintainability when developing software.
+                </p>
+
+                <p>
+                    My CS 300 Course Planner provides another example of
+                    applying programming skills and data structures to
+                    solve a defined problem. Together, these projects
+                    demonstrate different aspects of computing, from
+                    organizing information to developing application
+                    functionality. I plan to continue building on these
+                    experiences by using appropriate development tools,
+                    following coding standards, testing my work, and
+                    considering how my solutions provide value to users.
+                </p>
+            </div>
+
+            <div class="outcome">
+                <h3>Outcome 5: Security and Protection of Data</h3>
+
+                <p class="outcome-statement">
+                    Develop a security mindset that anticipates adversarial
+                    exploits in software architecture and designs to expose
+                    potential vulnerabilities, mitigate design flaws, and
+                    ensure privacy and enhanced security of data and resources.
+                </p>
+
+                <p>
+                    This outcome emphasizes the importance of considering
+                    security throughout the software development process.
+                    Developers need to think about how an application could
+                    be misused, what vulnerabilities could expose information,
+                    and how design and implementation decisions can reduce
+                    those risks. Security is not something that should be
+                    considered only after an application has been completed.
+                </p>
+
+                <p>
+                    My CS 305 secure communications coursework helped me
+                    develop a better understanding of protecting information
+                    and the importance of secure communication practices.
+                    This work reinforced the need to consider how information
+                    is transmitted and protected, as well as how security
+                    decisions affect the reliability and trustworthiness
+                    of a system.
+                </p>
+
+                <p>
+                    I can apply this security mindset to projects such as
+                    my CS 360 mobile event-tracking application by considering
+                    how application data is accessed, how user input is
+                    handled, and what could happen if information were
+                    exposed or improperly modified. These are important
+                    considerations when evaluating an application's design,
+                    even when a particular security enhancement has not
+                    been implemented.
+                </p>
+
+                <p>
+                    Moving forward, I want to continue learning how to
+                    identify vulnerabilities, evaluate potential risks,
+                    validate input, protect sensitive information, and
+                    follow secure coding practices. Developing these habits
+                    will help me create software that is not only functional,
+                    but also more reliable and responsible in how it
+                    handles data and resources.
+                </p>
+            </div>
+
+            <p>
+                Overall, these five outcomes reflect the different skills
+                I have developed during my Computer Science program.
+                Collaboration and communication help me explain ideas and
+                work with others, while algorithms and software engineering
+                help me develop practical solutions. Security adds another
+                important responsibility by reminding me to consider
+                vulnerabilities and protect information. My ePortfolio
+                brings these areas together and gives me a foundation
+                to continue improving as a software developer.
+            </p>
+        </section>
+
+        <section id="career-goals">
             <h2>Career Goals and Conclusion</h2>
 
             <p>
-                My goal is to pursue a career in software development
-                where I can use my programming and problem-solving skills
-                to build useful applications. I know I will keep learning
-                after graduation, especially as I gain experience on
-                real-world projects. I want to improve my technical
-                abilities, become more comfortable working with larger
-                systems, and learn from other developers.
+                My goal is to pursue a career in software development where
+                I can apply my programming knowledge, continue learning,
+                and contribute to useful software solutions. My experience
+                in the Computer Science program has helped me build a
+                foundation in programming, algorithms, data management,
+                software design, and security. It has also shown me the
+                importance of being willing to learn new tools and adapt
+                when a problem requires a different approach.
             </p>
 
             <p>
-                Overall, my time at SNHU has helped me become more
-                confident in my ability to analyze problems, develop
-                solutions, and improve existing software. My capstone
-                ePortfolio demonstrates the knowledge I have gained in
-                programming, algorithms, databases, software engineering,
-                and security. It has also helped me recognize the value
-                of communication, testing, and writing maintainable code.
-                I am proud of the progress I have made throughout my
-                degree, and I look forward to building on these skills
-                as I begin my career in computer science.
+                As I move forward, I want to continue improving my ability
+                to write clean and maintainable code, test applications
+                thoroughly, and make informed technical decisions. I also
+                want to strengthen my communication and collaboration
+                skills so that I can work effectively with other developers
+                and understand the needs of users and stakeholders.
+            </p>
+
+            <p>
+                Completing my ePortfolio has given me an opportunity to
+                reflect on how far I have progressed and how the projects
+                I completed during my program connect to the skills
+                expected of a computer science professional. I understand
+                that learning does not end with graduation. Technology
+                continues to change, and I will need to keep developing
+                my knowledge through practice, experience, and continued
+                learning. I am looking forward to applying what I have
+                learned and continuing to grow in the field of software
+                development.
             </p>
         </section>
 
-        <section>
+        <section id="explore-portfolio">
             <h2>Explore My ePortfolio</h2>
 
             <p>
-                Use the links below to explore my background, capstone
-                artifacts, and the work supporting each area of my portfolio.
+                The following pages provide more information about my
+                background and the work included in my Computer Science
+                ePortfolio.
             </p>
 
             <ul>
                 <li>
-                    <a href="about.html">About Me</a>
+                    <a class="artifact-link" href="about.html">About Me</a>
+                    — Learn more about my background and interests.
                 </li>
                 <li>
-                    <a href="software-engineering.html">
+                    <a class="artifact-link" href="software-engineering.html">
                         Software Engineering and Design
                     </a>
+                    — Explore my software engineering artifact and its
+                    development.
                 </li>
                 <li>
-                    <a href="algorithm-data-structures.html">
+                    <a class="artifact-link" href="algorithm-data-structures.html">
                         Algorithms and Data Structures
                     </a>
+                    — Explore my CS 300 Course Planner and its use of
+                    data structures and algorithms.
                 </li>
                 <li>
-                    <a href="databases.html">Databases</a>
-                </li>
-                <li>
-                    <a href="home.html">Original ePortfolio Home Page</a>
+                    <a class="artifact-link" href="databases.html">
+                        Databases
+                    </a>
+                    — Explore my database-related work and understanding
+                    of information management.
                 </li>
             </ul>
         </section>
@@ -353,8 +670,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Addison's CS 499 ePortfolio</p>
-        <p>Southern New Hampshire University</p>
+        <p>
+            Addison Janovich | SNHU Computer Science ePortfolio
+        </p>
     </footer>
 
 </body>
